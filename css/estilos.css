@@ -1,0 +1,127 @@
+/*SE USAN POCAS COSAS PERO SEGUIRA SIENDO EDITADO*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif
+}
+
+/* main, footer {
+    padding-left: 300px;
+  } */
+
+@media only screen and (max-width : 992px) {
+header, main, footer {
+    padding-left: 0;
+}
+}
+
+body{
+    background-color: #f3f3f3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main{
+    min-height: calc(100% - 100px);
+    width: 100%; 
+    /* padding-left: 300px; */
+    margin: auto;
+    position: static;
+    flex: 1 0 auto;
+    backface-visibility: hidden;
+    transition: .3s ease all;
+}
+.row_principal {
+    width:75.5%;
+    margin-left:24%;
+}
+h4.header_h {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h4.header_h2 {
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/*Formularios*/
+.contenedor_login{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.contenedor_login form {
+    width: 100%;
+    padding: 50px 20px;
+    background: #fff;
+    border-radius: 20px;
+}
+.contenedor_login form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor_login form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+.contenedor_login form button {
+    margin-top: 40px;
+    font-size: 14px;
+}
+/*responsive design*/
+
+@media only screen and (max-width: 992px) {
+    
+    .row_principal{
+        width:100%;
+        margin-left:auto;
+    }
+    
+    .logo{
+        display:none;
+    }
+
+    .caja_trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja_trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+    /*formulario*/
+
+    .contenedor_login{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor_login form{
+        position: relative;
+    } 
+}
+
+
